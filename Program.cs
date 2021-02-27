@@ -182,6 +182,34 @@ namespace Array_C_Sharp
             //    Console.WriteLine(aArray[i]);
             //}
 
+
+
+            //HashTable
+
+
+            Hashtable myHashtable = new Hashtable();
+            myHashtable.Add(12,"This");
+            myHashtable.Add('c',"An");
+            myHashtable.Add(1.2,"kilo");
+            myHashtable.Add('D',9.5);
+            myHashtable.Add(15,"It");
+
+            //Count - To count the number of hashtable element
+            //Console.WriteLine(myHashtable.Count);
+
+            //containsvalue - to find the value is in the list or not
+            //Console.WriteLine(myHashtable.ContainsValue("kilo"));
+
+            //contains/ containskey - to find the key is in the list or not
+            //Console.WriteLine(myHashtable.Contains(1.2));
+
+            //Remove - to remove the element with value or key
+            myHashtable.Remove(1.2);
+
+            //foreach (DictionaryEntry i in myHashtable)
+            //{
+            //    Console.WriteLine(i.Key +" - "+ i.Value);
+            //}
         }
     }
 }
