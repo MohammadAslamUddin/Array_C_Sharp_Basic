@@ -142,6 +142,46 @@ namespace Array_C_Sharp
             //    Console.WriteLine(i);
             //}
 
+
+            //Queue--------------4
+            //FIFO
+
+            Queue<char> myQueue = new Queue<char>();
+            myQueue.Enqueue('C');
+            myQueue.Enqueue('D');
+            myQueue.Enqueue('F');
+            myQueue.Enqueue('A');
+            myQueue.Enqueue('E');
+            myQueue.Enqueue('Z');
+            myQueue.Enqueue('X');
+
+            //Queue array can be converted into Array.
+            char[] aArray = myQueue.ToArray();
+
+            //Dequeue - to remove elements from the queue
+            //Console.WriteLine(myQueue.Dequeue());
+
+            //peek() - to show or significant the first value.
+            //Console.WriteLine(myQueue.Peek());
+
+            //Count - to count the number of elements
+            //Console.WriteLine(myQueue.Count);
+
+            //contains - is the data in the list or not.
+            //Console.WriteLine(myQueue.Contains('A'));
+            
+            //Console.WriteLine("Queue:------------");
+            //foreach (var i in myQueue)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            
+            //Console.WriteLine("Array:------------");
+            //for (int i = 0; i < aArray.Length; i++)
+            //{
+            //    Console.WriteLine(aArray[i]);
+            //}
+
         }
     }
 }
