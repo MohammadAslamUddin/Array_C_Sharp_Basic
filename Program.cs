@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Array_C_Sharp
 {
@@ -36,9 +37,42 @@ namespace Array_C_Sharp
             //After this function the array will give the value in descending orders
 
 
-            foreach (var number in numbers)
+            //foreach (var number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            
+            //Types of Array--------------------------------------------------------------------------------------------------------------------
+            //ArrayList----------1
+
+            ArrayList myArrayList = new ArrayList();
+            myArrayList.Add(10);
+            myArrayList.Add("Hey Buddy");
+            myArrayList.Add('C');
+            myArrayList.Add(10.53);
+
+            //We can replace the data my mentioning its position
+            //myArrayList[2] = 100;
+
+            //Length - To know about the size of array
+            //Console.WriteLine(myArrayList.Count);
+
+            //Remove - to data from the array with mentioning their values
+            //myArrayList.Remove(10);
+            
+            //RemoveAt - To remove data mentioning their position
+            //myArrayList.RemoveAt(2);
+            
+            //RemoveRange - To remove data from one range to another range
+            //myArrayList.RemoveRange(1,2);
+
+            //Contains -  to find the value is in the array or not. The answer will be True or false
+            Console.WriteLine(myArrayList.Contains('C'));
+            
+            foreach (var item in myArrayList)
             {
-                Console.WriteLine(number);
+                Console.WriteLine(item);
             }
 
 
