@@ -210,6 +210,29 @@ namespace Array_C_Sharp
             //{
             //    Console.WriteLine(i.Key +" - "+ i.Value);
             //}
+
+
+            //Dictionary<int, string>
+            
+            
+            Dictionary<int, string> myDictionary = new Dictionary<int, string>();
+            myDictionary.Add(152,"Hello");
+            myDictionary.Add(1300, "Hey");
+            myDictionary.Add(142,"Hi");
+            myDictionary.Add(134, "Hoi");
+            myDictionary.Add(14,"Qoo");
+            myDictionary.Add(135, "Whoo");
+
+            //Remove - to remove the element with value or key
+            myDictionary.Remove(14);
+
+            //ContainsKey - to find the value from the array by keys
+            Console.WriteLine(myDictionary.ContainsKey(14));
+
+            foreach (var i in myDictionary)
+            {
+                Console.WriteLine(i.Key +" - "+ i.Value);
+            }
         }
     }
 }
