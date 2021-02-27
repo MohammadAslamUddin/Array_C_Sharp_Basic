@@ -100,12 +100,44 @@ namespace Array_C_Sharp
             mylist.Reverse();
 
             //Remove - to remove data from the array with mentioning their values
-            Console.WriteLine(mylist.Remove(10));
+            //Console.WriteLine(mylist.Remove(10));
 
             //Contains -  to find the value is in the array or not. The answer will be True or false
-            Console.WriteLine(mylist.Contains(12));
+            //Console.WriteLine(mylist.Contains(12));
 
             //foreach (var i in mylist)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+
+            //Stack----------3
+            //LIFO
+
+            Stack<int> myStack = new Stack<int>();
+            myStack.Push(14);
+            myStack.Push(144);
+            myStack.Push(17);
+            myStack.Push(15);
+            myStack.Push(45);
+            myStack.Push(55);
+            myStack.Push(77);
+            myStack.Push(752);
+
+            //Stack array can be converted into Array.
+            int[] theArray = myStack.ToArray();
+
+
+            //POP() - to remove data from the stack
+            //Console.WriteLine(myStack.Pop());
+
+            //peek() - to show or significant the first value.
+            //Console.WriteLine(myStack.Peek());
+
+            //contains - is the data in the list or not.
+            //Console.WriteLine(myStack.Contains(12)); 
+
+            //foreach (var i in myStack)
             //{
             //    Console.WriteLine(i);
             //}
